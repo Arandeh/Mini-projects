@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div class="flex">
+    <div class="container">
+        <a href="#">
+            <span>
+                <svg  onclick="left()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 icon">
+                    <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd" />
+                  </svg>
+                  
+            </span>
+        </a>
+        <section class="image" >
+                <img src="./images/1.jpg" alt="" id="first" class="image1">
+                <img src="./images/2.png" alt="" id="second" class="image1">
+                <img src="./images/3.png" alt="" id="third" class="image1">
+        </section>
+        
+        <a href="#">
+            <span>
+                <svg onclick="right()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 icon">
+                    <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                  </svg>
+                  
+            </span>
+        </a>
+    </div>
+   </div>
+   <script>
+//    if($("img").attr("id")=="first"){
+//     console.log(hellow)
+//    }
+        
+    function left(){ 
+        var element1 = document.getElementsByTagName("img")[0];
+        var stil1 = window.getComputedStyle(element1).getPropertyValue("display");
+        var element2 = document.getElementsByTagName("img")[1];
+        var stil2 = window.getComputedStyle(element2).getPropertyValue("display");
+         
+     if (stil1 == "block") { 
+     document.getElementById('first').style.display="none";
+     document.getElementById('second').style.display="block";
+     document.getElementById('third').style.display="none";
+    }
+    else if (stil2 == "block") {
+     document.getElementById('first').style.display="none";
+     document.getElementById('second').style.display="none";
+     document.getElementById('third').style.display="block";
+    }
+    else{
+     document.getElementById('first').style.display="block";
+     document.getElementById('second').style.display="none";
+     document.getElementById('third').style.display="none";
+
+    }
+}
+    function right() { 
+        var element1 = document.getElementsByTagName("img")[0];
+        var stil1 = window.getComputedStyle(element1).getPropertyValue("display");
+        var element2 = document.getElementsByTagName("img")[1];
+        var stil2 = window.getComputedStyle(element2).getPropertyValue("display");
+      if (stil1 == "block") { 
+     document.getElementById('first').style.display="none";
+     document.getElementById('second').style.display="none";
+     document.getElementById('third').style.display="block";
+    }
+    else if  (stil2 == "block") {
+     document.getElementById('first').style.display="block";
+     document.getElementById('second').style.display="none";
+     document.getElementById('third').style.display="none";
+    }
+    else{
+     document.getElementById('first').style.display="none";
+     document.getElementById('second').style.display="block";
+     document.getElementById('third').style.display="none";
+
+    }
+}
+   
+
+   </script>
+    
+</body>
+</html>

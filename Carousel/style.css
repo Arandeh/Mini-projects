@@ -1,0 +1,35 @@
+
+*{
+    box-sizing: border-box;
+    background-color: aquamarine;
+}
+.icon {
+    width: 60px;
+    margin-top:370px ;
+}
+.container{
+    max-width: 1200px;
+    background-color: white;
+    margin: 200px auto 0;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.image {
+    width: 2400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#third , #second{
+    
+    display: none;
+    
+}

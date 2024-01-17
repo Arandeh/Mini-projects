@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    background-color: white(186, 243, 208);
+    
+    
+}
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+   
+}
+.modal-button {
+    background-color: rgb(69, 207, 173);
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-bottom: 10px;
+
+
+}
+#show {
+    visibility: hidden;
+}
+.modal-container {
+    width: 500px;
+    height: 200px;
+    background-color: white;
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+    
+    
+    
+    
+}
+.icon{
+    width: 30px;
+    border: 1px solid black;
+    margin: 2px;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.modal-body {
+    height: 100px;
+}
