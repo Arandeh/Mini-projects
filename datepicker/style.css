@@ -1,0 +1,57 @@
+* {
+	box-sizing: border-box;
+	
+}
+body {
+	
+	color: #546E7A;
+}
+.datebox {
+display: flex;
+justify-content: center;
+margin-top: 10rem;
+font-size: 2rem;
+
+}
+.date {
+    width: 400px;
+    height: 50px;
+    font-size: 2rem;
+    
+}
+.datecard{
+    
+    display: flex;
+    justify-content: center;
+}
+.datecardinside{
+    width: 400px;
+    height: 400px;
+    background-color: aquamarine;
+    margin-top: 2rem;
+    margin-left: 150px;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+.icon {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem ;
+}
+.alfa{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#demo , #demo1 , #demo2 , #demo0 {
+    font-size: 1.5rem;
+    padding-right: 4px;
+    padding-left: 7px;
+    
+}
+#open{
+    visibility: hidden;
+    
+    
+}

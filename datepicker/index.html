@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datepicker</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="datebox" >
+        <label for="datepicker" id="input">Datepicker
+            <input type="text" class="date" >
+            
+        </label>	
+    </div>
+    <div class="datecard" id="open">
+        <div class="datecardinside">
+            <div class="icon">
+                <i class="material-icons">&#xe314;</i>
+                <i class="material-icons">&#xe315;</i>
+            </div>
+            <div>
+                <table class="alfa" id="myTable">
+                    
+                    <tr>
+                        <th>S</th>
+                        <th>M</th>
+                        <th>T</th>
+                        <th>W</th>
+                        <th>T</th>
+                        <th>F</th>
+                        <th>S</th>
+                       
+                    </tr>
+                    <tr >
+                        <p id="tableinside"></p>
+                    </tr>
+                    
+                    
+                      <samp id="demo0">date is :</samp>
+                      <span id="demo"></span>
+                      <span id="demo1"></span>
+                      <span id="demo2"></span>
+                      
+                      
+                      
+                </table>
+                <div id="calendar" style="background-color: red;"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+        const y = new Date();
+        document.getElementById("demo").innerHTML = y.getFullYear() ;
+        const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+         const m = new Date();
+         let month = months[m.getMonth()];
+          document.getElementById("demo1").innerHTML = month;
+          const d = new Date();
+         document.getElementById("demo2").innerHTML = d.getDate();
+         document.getElementById("input").onclick = open;
+         function open(){
+          document.getElementById('open').style.visibility="visible"
+         }
+         
+         
+         let html = "<tr>";
+         for (var i = 1; i <= 30; i++) {
+         if(i % 7 == 0){
+            html += "<td>"+i+"</td><br></tr>";
+         }
+         else{
+            html+= "<td>"+i+"</td>"
+          } 
+         }
+         document.getElementById("calendar").innerHTML = html;
+         
+
+         
+ 
+         const tbl = document.createElement("table");
+         const tblBody = document.createElement("tbody");
+
+  
+         for (let i = 0; i < 4; i++) {
+   
+         const row = document.createElement("tr");
+
+         for (let j = 0; j < 7; j++) {
+          
+         const cell = document.createElement("td");
+         const cellText = document.createTextNode(j+1);
+         cell.appendChild(cellText);
+         row.appendChild(cell);
+        
+        }
+
+    
+        tblBody.appendChild(row);
+         }
+
+  
+         tbl.appendChild(tblBody);
+  
+         document.getElementById("tableinside").appendChild(tbl);
+  
+        
+         
+            
+        
+
+         
+       
+
+        // for (let i = 0; i <= 6; i++) {
+        //   var tbodyRef = document.getElementById('myTable').getElementsByTagName('tbody')[i];
+
+
+        //   var newRow = tbodyRef.insertRow();
+
+
+        //   var newCell = newRow.insertCell();
+
+
+        //   var newText = document.createTextNode(i+1);
+        //   newCell.appendChild(newText);}
+       
+
+
+    </script>
+
+</body>
+</html>

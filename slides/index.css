@@ -1,0 +1,117 @@
+body {
+    box-sizing: border-box;
+}
+
+#first-image {
+    width: 100%;
+    border-radius: 15px;
+    height: auto;
+}
+#box-of-images {
+    width: 1035px;
+    height: 800px;
+    background-color: #9ed9c5;
+    display: none;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory;
+    margin: 20px auto 0;
+    border-radius: 20px;
+    padding: 35px;
+}
+#image-real-size {
+    width: 1035px;
+    height: 700px;
+    background-color: white;
+    display: none ;
+    margin: 20px auto 0;
+    border-radius: 20px;
+    padding: 35px;
+    border: 2px solid ghostwhite;
+}
+#close-button-first , #close-button-second {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: none;
+    padding: 2px;
+    
+}
+.image-one-gallery {
+    width: 230px;
+    height: 168px;
+    object-fit: cover;
+    margin: 10px;
+}
+.box {
+    width: 280px; 
+    height:200px ;
+}
+.img-btn{
+    position: absolute;
+    background-color: white;
+    border-radius: 8px;
+    top: 180px;
+    left: 15px;
+    height: 30px;
+    width: 85px;
+}
+.gallery-button{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    padding: 3px;
+}
+.gallery{
+
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    flex-direction: row;
+    
+}
+.small-gallery {
+    width: 100%;
+    height: 88px;
+    overflow: hidden;
+    display: flex;
+    gap: 5px;
+}
+.big-gallery{
+    width: 800px;
+    height: 400px;
+    padding: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+.image-two-gallery{
+    height: 88px;
+    width: 88px;
+    border-radius: 10px;
+    opacity: 0.2;
+    margin: 5px;
+}
+.real-size{
+    width: 100%;
+    height: 400px;
+    display: none;
+   
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.real1 {
+   
+    border-radius: 10px;
+}
+.icon {
+    margin-top: 195px;
+
+}
